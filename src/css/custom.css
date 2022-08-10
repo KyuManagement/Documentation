@@ -338,3 +338,12 @@
 .alert--tip svg {
   fill: var(--ifm-color-tip-dark) !important;
 }
+
+p {
+  margin: 0 0 5px 0 !important;
+}
+
+blockquote {
+  border-left: 3px solid var(--ifm-blockquote-border-color);
+  padding: var(--ifm-blockquote-padding-vertical) 5px;
+}
