@@ -4,8 +4,8 @@ export const Underline = () => {
   )
 };
 
-export const Highlight = ({children, color, url}) => (
-  <a style={{ color: color, fontWeight: 'bold', textDecoration: 'none' }} href={url}>
+export const Highlight = ({children, color, url, style={}}) => (
+  <a style={{...style, ...{color: color, fontWeight: 'bold', textDecoration: 'none'}}} href={url}>
     {children}
   </a>
 );
@@ -17,10 +17,11 @@ export const TitleImage = ({children, image, size, style = {}}) => (
   </div>
 )
 
-export const InlineImage = ({children, image, size, style = {}}) => {
+export const InlineImage = ({children, image, size, style = {}, text = ""}) => {
   return (
-  <div style={{display: 'inline-flex', alignItems: 'center'}}>
-    <div>{children}</div>
+  <div>
+    {children}
     <img src={image} style={{...style, ...{width: 'auto', height: size, marginLeft: '4px'}}} />
+    {text}
   </div>
 )}
