@@ -1,0 +1,8 @@
+{
+  "label": "Latest updates",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "List of the latest updates from KyuBot."
+  }
+}
