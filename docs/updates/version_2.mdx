@@ -1,0 +1,261 @@
+---
+sidebar_position: 1
+title: Version 2
+---
+import { Underline, Highlight, InlineImage } from './../../components/basic.mdx'
+
+Join the KyuBot support server to get notifications for new updates and status changes!
+
+<Underline />
+
+## Update 2.0.1 | <Highlight>08/08/2022</Highlight>
+
+<InlineImage image={"https://cdn.discordapp.com/emojis/934907849623101450.png"} size={"18px"}>There have been soo many updates that I can't even keep up with it anymore. While the new update bought a ton of features it also bought a lot of bugs. There are still some bugs present but hopefully they'll be fixed soon.</InlineImage>
+
+#### Bug fixes
+> - Fixed issues with all leaderboards not being paginated
+> - Rank cards not showing the correct user positions 
+> - Users that are using Discord in French we're unable to use any commands
+> - Cooldown wasn't working globally 
+> - Fixed an issue where the whole bot would restart when it didn't have permissions to reply to a message 
+> - You should now get a dm when you vote or an import is complete 
+> - Fixed issue with voice exp blacklist not working 
+> - Fixed a bunch of embed/language issues 
+> - Fixed issue with /announce test and /test not working properly when sending to another channel 
+> - Fixed issues with how voice works and members not getting the exp they deserve 
+> - <InlineImage image={"https://cdn.discordapp.com/emojis/948322135330394143.png"} size={"18px"}>Lootboxes just became a little bit cooler.</InlineImage>
+> - Fixed issue with commands not replying to guilds that have no icon (This may still occur with some commands, will fix over the next couple of days) 
+> - Fixed issues with import only importing the first 1,000 members instead of all the members. 
+> - Alot more stuff...
+
+<br />
+
+**Future:** <InlineImage image={"https://cdn.discordapp.com/emojis/944531800858972240.png"} size={"18px"} text={". I want to introduce some more risks to your servers leveling economy... That's all I'll say for now."}>The future seems bright, we've been doing really well with this new update and we hope we can keep growing. Thank you so much for all the support and love</InlineImage>
+
+**Dashboard:** The dashboard is in the works again, while this isn't going to be released next week it is being worked on and I want to make sure it's easy to use and has a nice UI. While working on Kyu v2 the dashboard was put on hold but it's become my main focus again. Kyu International Read the post above and help Kyu learn new languages.
+
+## Supporting translations | <Highlight>03/08/2022</Highlight>
+
+Hey, I talked a bit about it in the last post but we're trying to make <Highlight>@KyuBot</Highlight> learn some new languages. I'd love to be able to just translate all these but I'm pretty dumb and only know barely two languages. So we're hoping you guys can help us create translations of the current commands for a variety of different languages.
+
+I found Crowdin which makes translations a bit simpler (hopefully).
+
+Link: <Highlight url={"https://crowdin.com/project/kyubot"}>https://crowdin.com/project/kyubot</Highlight>
+
+## Update 2.0.0 | <Highlight>02/08/2022</Highlight>
+
+**KyuBot v2 is finally finished!**
+
+The long awaited update is finally here.
+Multiple language support - still need to translate them all
+Better/more optimised system for amariimport and mee6import, you can now import from Tatsu bot.
+
+<Highlight color={"#b95e04"} style={{fontWight: 'bold'}}>New features:</Highlight>
+
+- Multiple language support (work in progress)
+- You can finally customise embeds
+- There are A LOT more variables for announcements
+- You can now import levels from Tatsu
+- Voice has a few fixes, including blacklisted voice roles now actually work
+- Reset now has a extra options along with ability to reset users
+- You can now check leaderboard for normal levels, koth, and voice
+- Ability to check normal and voice rank cards
+- Lootboxes are now reset every Monday at 23:00 UTC
+- Givexp now assigns roles to users when go over a level
+
+
+<Highlight color={"#b95e04"} style={{fontWight: 'bold'}}>New commands:</Highlight>
+
+- Embed (Customise embeds)
+- Import (Replacing Amariimport & Mee6import)
+- Test (Test custom announcements)
+- Type (Wanted to make announce a bit short so...)
+- Lootbox stats (Check how many lootboxes you've opened)
+
+
+<Highlight color={"#b95e04"} style={{fontWight: 'bold'}}>Removed commands:</Highlight>
+
+- Amariimport (Moved to /import)
+- Mee6import (Moved to /import)
+- Prefix
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Announce:</Highlight>
+
+Message:
+- New variables (26 total)
+
+Customize:
+- You can now customize the title, description, image and color for global announcements
+- Option to set description back to default
+
+Variables:
+- List of all available variables
+
+Removed:
+
+- Type (has been moved to it's own command)
+- Embed (has been moved to it's own command)
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Embed:</Highlight>
+
+Embeds have been improved MASSIVELY, and I want to introduce custom embeds and embeds for specific levels.
+
+Add:
+
+- Add a new embed for a specific level
+
+Remove:
+
+- Remove an embed from a specific level
+
+Customize:
+
+- Customize the title, description, image, and color for global announcements or specific level
+- Set description to default for global announcements or specific level
+
+Ping:
+
+- Disabled/enable pings for global announcements or specific level embeds
+
+Toggle:
+
+- New option to toggle embed for global announcements or specific embeds
+
+Test:
+
+- Test announcements for global announcements or a specific level
+
+Variables:
+
+- List of all available variables
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Import:</Highlight>
+
+Another new command, well kinda... amariimport and mee6import have been combined into /import. Along with introducing imports from Tatsu.
+Users can currently select to import from one of the following bots:
+
+- AmariBot
+- Mee6
+- Tatsu
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Koth:</Highlight>
+
+There hasn't been many updates with koth, but keep an eye out for some really cool stuff coming for this command soon. BUT, there has been one update, there's a MUCH nicer embed for when announcing koth winners. 
+
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Reset:</Highlight>
+
+Not many people use the reset command (one of the least used commands). Nevertheless, there have been a few updates to this command as a few users requested.
+
+- You can now reset specific users, even if they have left the server.
+
+You can now reset the following settings:
+
+- Announce
+- Blacklist
+- Goodbye
+- Ignore
+- Koth
+- Voice
+- Welcome
+- Points
+- Settings
+
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Rewards:</Highlight>
+
+Not too many updates here yet, but rewards limit has now been upped from 25 to 30 roles. 
+
+I'm still messing with this so it may decrease or increase randomly without any announcements.
+
+Along with that there were some bugs with the rewards slash command where it wouldn't recognise the mentioned role, this has now been fixed. Also there's a better embed now :)
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Setlevel:</Highlight>
+
+You can now update the level of multiple members, this is done by providing a level for all members which have a specific role.
+
+This is still a bit buggy due to the way discord works (we can't get member roles until they send a message). I'm trying to figure out a way to improve this, so hopefully soon that issue will be fixed.
+
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Test:</Highlight>
+
+This might be removed but you can now use this command to test the global announcement or specific level announcements.
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Type:</Highlight>
+
+Another new command for your cute face :). You can change where the announcements are sent/type of announcements sent.
+
+You can select all announcements to be sent to a specific channel, only roles with rewards to be sent, announcements sent to user dms or sent in the channel where the user levels up.
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Voice:</Highlight>
+
+Not much new here but there have been some nice embeds introduced for this, along with a bunch of bug fixes.
+
+Also you can now check the leaderboard for voice levels.
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Leaderboard:</Highlight>
+
+Leaderboard has not that many changes for you, but on the backend there has been many improvements and fixes.
+
+But there are a few new features with leaderboards:
+
+- All leaderboards are now paginated, so you can go through each page.
+- Member's who have no experience are no longer shown on the leaderboard.
+- If there are no members with experience the bot actually replies and tells you instead of creating dummy data.
+
+You can now check the following leaderboards:
+
+- Normal
+- Voice
+- Koth
+
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Lootbox:</Highlight>
+
+I love this command (mainly cause it feeds my addiction), but there are a few new features.
+Stats:
+
+- Check the total amount of lootboxes you have opened in the specific guild.
+- Check how many lootboxes you have left until rare/gold lootbox
+
+Open:
+
+- Open a lootbox to earn experience
+- New animations for lootboxes (WIP | Only available for donators)
+
+Toggle:
+
+- Server admins can now disable lootboxes for all members.
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Profile:</Highlight>
+
+While there's no new features there are some UI improvements for this command.
+
+Opacity:
+
+- UI has been added which allows users to use buttons to change opacity and get live updates of what the opacity looks like.
+
+Background & overlay:
+
+- Mainly backend updates, but images are now compressed and resized to fit the current canvas size. So make sure you have the correct resolution for images.
+
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Rank:</Highlight>
+
+BADGES ARE FINALLY BACK, along with a few other updates which are pretty cool.
+User:
+
+- Fixed a lot of issues when users tried to check another users rank.
+- You can no longer check the rank of a bot (I don't want bots in my database)
+
+Type:
+
+- You can now check experience for both normal and voice ranks 
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Givexp:</Highlight>
+
+Not very cool stuff here but users will now be given roles when they reach a specific level that has rewards.
+
+<Highlight color={"#d33d3d"} style={{fontWight: 'bold'}}>Removexp:</Highlight>
+
+Again not very cool stuff here but when users lose a level and go under reward level, that role will be removed from the user.
