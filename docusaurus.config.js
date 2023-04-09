@@ -1,36 +1,34 @@
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kyu Docs',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://kyubot.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Kyu Docs",
+  tagline: "Dinosaurs are cool",
+  url: "https://docs.kyubot.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/badge/staff.png",
 
-  organizationName: 'ksjaay',
-  projectName: 'KyuDocs',
+  organizationName: "KyuBot.com",
+  projectName: "KyuDocs",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/KSJaay/KyuDocs/pulls/'
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/KSJaay/KyuDocs/pulls/",
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -40,18 +38,23 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Kyu Docs',
+        title: "Kyu Docs",
+        logo: {
+          alt: "KyuBot Logo",
+          src: "img/KyuBot.png",
+          srcDark: "img/KyuBot.png",
+          href: "https://docs.kyubot.com",
+          target: "_self",
+          width: 32,
+          height: 32,
+        },
       },
       footer: {
-        style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} KyuBot, Inc. Built with Docusaurus.`
+        style: "light",
+        copyright: `Copyright © 2023 KyuBot.com ❤️`,
       },
       colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true
-      },
-      prism: {
-        theme: darkCodeTheme
+        defaultMode: "dark",
       },
     }),
 };
