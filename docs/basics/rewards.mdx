@@ -1,0 +1,45 @@
+---
+sidebar_position: 8
+title: Rewards
+id: rewards
+slug: /rewards
+---
+
+import {
+  Underline,
+  Highlight,
+  InlineImage,
+  TitleImage,
+} from "./../../components";
+
+Follow this guide to setup the rewards system in your server.
+
+<Underline />
+
+### Badge rewards
+
+1. Add a new badge by using `/badge add <name> <url>` command.
+2. Assign the badge to a specific level by using `/rewards add badge <level> <name>` command.
+3. That's it, you're setup :D. You can now do this for all the badges you want to reward.
+
+### Experience rewards
+
+1. Assign the experience to a specific level by using `/rewards add xp <level> <exp>` command.
+
+### Role Rewards
+
+Our leveling system gives your members a chance to earn rewards for their activity in the server.
+You can use our rewards command to give users roles upon leveling up. Use `/rewards add 10 @KyuBot` assign any role to a specific level.
+
+1. Create a role in your server.
+2. Assign the role to a specific level by using `/rewards add role <level> <role>` command.
+
+<br />
+
+:::info
+
+When setting up roles make sure that KyuBot's highest role is above the role you are trying to assign in the role hierarchy.
+
+:::
+
+![Hierarchy Gif](https://media.discordapp.net/attachments/932069176007331900/932074434142011482/Hierarchy.gif)
