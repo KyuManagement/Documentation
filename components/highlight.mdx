@@ -1,0 +1,11 @@
+export const Highlight = ({children, color, url, style = {}}) => (
+  <a
+    style={{
+      ...style,
+      ...{color: color, fontWeight: "bold", textDecoration: "none"},
+    }}
+    href={url}
+  >
+    {children}
+  </a>
+);

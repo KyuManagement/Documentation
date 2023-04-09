@@ -1,0 +1,30 @@
+export const TitleImage = ({
+  children,
+  image,
+  rightImage,
+  size = "18px",
+  style = {},
+}) => (
+  <div style={{display: "inline-flex", alignItems: "center"}}>
+    <img
+      src={image}
+      style={{
+        ...style,
+        ...{width: "auto", height: size, marginRight: "8px", marginTop: "3px"},
+      }}
+    />
+    <div style={{fontSize: size, fontWeight: "bold"}}>{children}</div>
+    {rightImage && (
+      <img
+        src={rightImage}
+        style={{
+          width: "auto",
+          height: size,
+          marginRight: "8px",
+          marginTop: "3px",
+          ...style,
+        }}
+      />
+    )}
+  </div>
+);

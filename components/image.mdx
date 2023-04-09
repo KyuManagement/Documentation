@@ -1,0 +1,17 @@
+export const Image = ({image, size = "48px", style = {}}) => {
+  return (
+    <div style={{display: "flex", alignItems: "center"}}>
+      <img
+        src={image}
+        style={{
+          ...style,
+          ...{
+            width: "auto",
+            height: size,
+            marginLeft: "4px",
+          },
+        }}
+      />
+    </div>
+  );
+};

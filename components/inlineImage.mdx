@@ -1,0 +1,24 @@
+export const InlineImage = ({
+  children,
+  image,
+  size,
+  style = {},
+  css = {},
+  text = "",
+}) => {
+  return (
+    <div style={{display: "flex", alignItems: "center", ...css}}>
+      {children}
+      <img
+        src={image}
+        style={{
+          width: "auto",
+          height: size,
+          marginLeft: "4px",
+          ...style,
+        }}
+      />
+      {text}
+    </div>
+  );
+};
