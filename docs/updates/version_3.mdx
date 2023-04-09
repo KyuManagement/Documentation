@@ -1,28 +1,64 @@
 ---
 sidebar_position: 1
 title: V3 | Cyprus
+slug: /update/Cyprus
+id: cyprus
 ---
+
 import {
   Underline,
   Highlight,
   InlineImage,
   TitleImage,
-} from "./../../components/basic.mdx";
+} from "./../../components";
 
 Join the KyuBot support server to get notifications for new updates and status changes!<br/>
-03/26/2023 - now
 
 <Underline />
 
-## Update 3.0.0 | <Highlight>03/26/2022</Highlight>
+## Update 3.0.1 | <Highlight>08/04/2022</Highlight>
+
+<TitleImage
+  image={
+    "https://media.discordapp.net/attachments/1046456429516697640/1046466712217862224/KyuSearch.png"
+  }
+  rightImage={
+    "https://media.discordapp.net/attachments/1046456429516697640/1046466712217862224/KyuSearch.png"
+  }
+  style={{width: "10px", height: "10px"}}
+>
+  <div>Update 3.0.1</div>
+</TitleImage>
+
+The new v3 update has been doing really well, but there has been a few bugs which we expected. Also, one new feature VOTING REWARDS ARE BACK!!!
+
+**Bug fixes**
+
+- Announcements not showing the correct variables
+- Announcement embeds showing incorrect information
+- Announcement embeds not showing chosen colours
+- Announcements not being sent to channels/dms
+- Announcements being sent multiple times
+- Cooldown being added up for roles, channels, and global instead of picking a single one
+- Embeds showing the incorrect footer
+- Experience rewards not being assigned
+- Interactions not showing the correct autocomplete answers
+- Leaderboard showing the incorrect users
+- Lootboxes not paying the correct amounts
+- Rewards not being assigned properly
+- Role rewards randomly removed from the list
+- Rank showing the wrong level for users
+
+## Update 3.0.0 | <Highlight>26/03/2022</Highlight>
 
 It's been a long few months but it's all finally done, V3 IS NOW OUT!! The past couple of days we've had a lot of maintenance and that's all been to release version 3 of the bot.
-The following doesn't even start to explain the amount of updates we've pushed out, we'll have a list of ALL the updates on https://docs.kyubot.com/ soon. But for now here's a short list of the main updates.
+The following doesn't even start to explain the amount of updates we've pushed out, we'll have a list of ALL the updates on **https://docs.kyubot.com/** soon. But for now here's a short list of the main updates.
 
 New features:
+
 - Custom rank cards for users/members/guilds
 - Reward users custom guild badges on level up 👀
-- Reward users experience on level up 
+- Reward users experience on level up
 - Multipliers for channels/roles/global
 - Cooldown for channels/roles/global
 - Customise leaderboard embeds
@@ -33,6 +69,7 @@ New features:
 - Right click users to see rank
 
 Updates:
+
 - Customisation just got better with /profile
 - Givexp/removexp combined into modifyexp
 - 12 new variables for announcements
@@ -46,4 +83,75 @@ Updates:
 
 Hope you guys love the new update, we know there are a few bugs but I'm fixing those as soon as possible.
 
-<br/>
+<br />
+
+## Update 3.0.0-beta.3 | <Highlight>26/03/2022</Highlight>
+
+**Kyu Imports**
+
+Imports have now been finished and everything seems to be working pretty well. You might be wondering why make an announcement about just one feature being finished? Well imports was the last feature that needed to be finished. So, v3 should be realising very very soon :KyuHype:.
+
+Over the next week I'm going to be testing every single feature to make sure everything is working properly and once done I'll be realising the NEW VERSION! I'm super hyped for what's to come, and we have a ton of things planned including some awesome events!!
+
+## Update 3.0.0-beta.2 | <Highlight>04/03/2023</Highlight>
+
+**More beta update**
+
+**New features**
+
+- Reset command should now fully work
+- Modifyexp gives all rewards instead of just role rewards
+- LOOTBOXES ARE FINALLY BACK
+- Announcements have now been implemented
+- 12 new variables for announcements
+
+**Bug fixes**
+
+- Command descriptions on the help page
+- Adding a new badge caused interaction to fail
+- Embed descriptions being incorrect
+- Rank cards showing incorrect positions
+- Users not being able to upload images for profile
+- Exp not being rewarded properly
+- Rewards not being assigned properly
+- Rewards being assigned multiple times
+- Blacklist not working as intended
+- Ignore not working as intended
+- Modifyexp not rewarding users properly
+- Modifyexp causing interaction failures
+- Exp not being rewarded in voice text channels
+- Redesigned/fixed various embeds
+
+**Future updates**
+I'm going to be away for the next week, so lets hope nothing crashes and burns as I won't have much access to the bot over this period. Once I'm back I will be mainly focusing on releasing v3 and possibly some new events :egg:... Until then let me know if you find any issues with the bot and have a great week :KyuLove:
+
+## Update 3.0.0-beta.1 | <Highlight>20/02/2023</Highlight>
+
+**Beta Updates**
+Fixed a few issues with beta, along with introducing some new features. Before I care on, all features on Beta bot are now free for all guilds/users so you guys can now bug test those as well :D.
+
+**New Features**
+
+- `Givexp/Removexp` has been removed and combined into modifyexp
+- Experience is now works in Forums, Threads, and Voice text channels
+
+**Bug fixes**
+
+- `/multiplier` not adding exp properly
+- Multipliers not being assigned properly upon user messaging
+- `/rewards` not adding the reward to guild
+- Issues with rewards not being assigned properly
+- Being able to add values less than 1 for few different commands (rewards exp, multiplier, modifyexp, etc.)
+- Settings messing up when selecting different options
+- Rank now shows the correct position
+- Rank card not being shown for voice levels (even though those don't exists yet)
+- User's not being able to assign badges properly to rank card
+- Fixed some visual issues with rank cards
+- Incorrect embed styles being sent
+- Incorrect messages sent for `/welcome`
+
+**Currently working on**
+
+- Updating `/reset` to add confirmation messages
+- Reworking/overhaul for `/lootbox`
+- Reworking `/import` to add confirmation/optimisation
